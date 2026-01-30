@@ -79,7 +79,7 @@ jobs:
         run: |
           for i in 1 2 3; do
             echo "Push attempt $i..."
-            if docker push ambsd/heartmula-studio:latest && docker push ambsd/heartmula-studio:${{ github.sha }}; then
+            if docker push dotnetautor/heartmula-studio:latest && docker push dotnetautor/heartmula-studio:${{ github.sha }}; then
               echo "Push successful!"
               exit 0
             fi
